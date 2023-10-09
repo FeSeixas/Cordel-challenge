@@ -58,6 +58,10 @@ section {
     font-family: var(--fonte3);
 }
 
+section p {
+    padding-bottom: 2em ;
+}
+
 
 .normal{
     background-color: white;
@@ -67,16 +71,45 @@ section {
 .imagem {
     background-color: black;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.549);
 }
 
 .imagem > p {
     display: inline-block;
 
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.395);
 
     padding: 5px;
 
     border-radius: 1%;
+
+    text-shadow: 1px 1px 0 black;
+}
+
+#joaninha{
+background-image: url("imagens/background001.jpg");
+
+/* Full height */
+height: 100%;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#papel{
+    background-image: url("imagens/background002.jpg");
+
+/* Full height */
+height: 100%;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 /* resolução para dispositivos móveis */
