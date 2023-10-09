@@ -87,7 +87,7 @@ section p {
 }
 
 #joaninha{
-background-image: url("imagens/background001.jpg");
+background-image: url("../imagens/background001.jpg");
 
 /* Full height */
 height: 100%;
@@ -100,7 +100,7 @@ background-size: cover;
 }
 
 #papel{
-    background-image: url("imagens/background002.jpg");
+    background-image: url("../imagens/background002.jpg");
 
 /* Full height */
 height: 100%;
