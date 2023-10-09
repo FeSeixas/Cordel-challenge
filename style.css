@@ -1,12 +1,21 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
+:root {
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Passion One', cursive;
+    --fonte3:'Sriracha', cursive;
+}
+
 html, body {
     min-height: 100vh;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -20,11 +29,14 @@ header > h1 {
 
     /* text-transform: uppercase; Colocar em maiusculo */
 
-     font-variant: small-caps; /*letras maiusculas mas sem deixar muito grande */
+    font-variant: small-caps; /*letras maiusculas mas sem deixar muito grande */
+    font-family: var(--fonte2);
+    font-size: 4em;
 }
 
 header > p {
     padding-bottom: 50px;
+    
 }
 
 a {
@@ -43,6 +55,7 @@ section {
     padding-left: 30px;
 
     line-height: 2em;
+    font-family: var(--fonte3);
 }
 
 
@@ -57,11 +70,57 @@ section {
 }
 
 .imagem > p {
-    width: 400px;
+    display: inline-block;
+
     background-color: rgba(0, 0, 0, 0.253);
+
+    padding: 5px;
+
+    border-radius: 1%;
 }
 
+/* resolução para dispositivos móveis */
+@media only screen and (max-width: 600px) { 
+    section p {
+    font-size: 18px;
+    line-height: 2em;
+    }
+}
 
+/* resolução para dispositivos móveis um pouco maiores */
+@media only screen and (min-width: 600px) { 
+    section p {
+    font-size: 20px;
+    line-height: 2em;
+    }
+}
+
+/* resolução para tablets */
+@media only screen and (min-width:768px){ 
+    section p{
+        font-size: 25px ;
+        line-height: 2em;
+    }
+
+}
+
+/* resolução para tablets maiores */
+@media only screen and (min-width:992px){ 
+    section p{
+        font-size: 25px ;
+        line-height: 2em;
+    }
+
+}
+
+/* resolução para laptop e desktop */
+@media only screen and (min-width:1200px) { 
+    section p{
+        font-size: 30px ;
+        line-height: 2em;
+    }
+
+}
 
 
 
